@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/********** LAYOUT CLASSES **********/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-section {
+  height: calc(100vh - 100px);
+  background-color: rgba(8, 11, 18, 255);
+  display: flex;
+}
+
+.bottom-section {
+  height: 100px;
+  background-color: rgba(40, 40, 40, 255);
+  position: fixed;
+  width: 100vw;
+}
+
+.sidebar {
+  width: 230px;
+  background-color: rgba(0, 0, 0, 255);
+  padding: 15px 15px 5px 15px;
+  color: rgba(130, 130, 130, 255);
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.main-content {
+  width: calc(100vw - 230px);
+  height: calc(100vh - 200px);
+  background-color: rgba(20, 25, 34, 255);
+  position: relative;
+  top: 100px;
+}
+
+header {
+  position: fixed;
+  left: 230px;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(8, 11, 18, 255);
+  width: calc(100vw - 230px);
+  height: 100px;
+}
+
+.bottom-col {
+  color: white;
+}
+
+.bottom-col img {
+  width: 50px;
+}
+
+.bottom-row {
+  display: flex;
+  padding: 25px 10px;
+  align-items: center;
+}
+
+.bottom-col .content span {
+  font-size: small;
+  color: rgba(130, 130, 130, 255);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.sidebar-i {
+  padding-right: 10px;
+  padding-top: 20px;
+}
+
+.header-b {
+  background-color: rgba(8, 11, 18, 255);
+  color: white;
+  border: 1px solid white;
+  padding: 13px 40px;
+  border-radius: 20px;
+  float: inline-end;
+  margin-top: 27px;
+  margin-right: 5px;
+}
+
+.nav-hr {
+  width: 198px;
+  margin: 10px 0px;
+  background-color: rgba(130, 130, 130, 255);
+  height: 1px;
+  border: 0;
+}
+
+.profile-icon {
+  width: 25px;
+  height: 25px;
+  background-color: rgba(128, 128, 128, 255);
+  border-radius: 50%;
+}
+
+/********** UTILITY CLASSES **********/
+
+.padding-l15-px {
+  padding-left: 15px;
+}
+
+.padding-r10-px {
+  padding-right: 10px;
+}
+
+.padding-l10-px {
+  padding-left: 10px;
+}
+
+.padding-b15-px {
+  padding-bottom: 15px;
+}
+
+.padding-l40-px {
+  padding-left: 40px;
+}
+
+.padding-t30-px {
+  padding-top: 30px;
+}
+
+.padding-t20-px {
+  padding-top: 20px;
+}
+
+.display-in-block {
+  display: inline-block;
+}
+
+.white {
+  color: white;
+}
+
+.f-size-25-px {
+  font-size: 25px;
+}
+
+.f-size-50-px {
+  font-size: 50px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+}
