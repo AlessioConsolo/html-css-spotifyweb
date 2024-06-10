@@ -75,8 +75,7 @@ ul {
 }
 
 .sidebar-i {
-  padding-right: 10px;
-  padding-top: 20px;
+  width: 35px;
 }
 
 .header-b {
@@ -103,6 +102,15 @@ ul {
   height: 25px;
   background-color: rgba(128, 128, 128, 255);
   border-radius: 50%;
+}
+
+.download-icon {
+  width: 16px;
+}
+
+.sidebar-li-container {
+  display: flex;
+  align-items: center;
 }
 
 /********** UTILITY CLASSES **********/
@@ -133,6 +141,10 @@ ul {
 
 .padding-t20-px {
   padding-top: 20px;
+}
+
+.padding-t15-px {
+  padding-top: 15px;
 }
 
 .display-in-block {
