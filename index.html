@@ -19,52 +19,89 @@
         <button class="header-b">EFFETTUA L'UPGRADE</button>
       </header>
       <div class="sidebar">
-        <div class="sidebar-content">
+        <div class="sidebar-content-start">
           <img class="padding-b15-px" src="./img/logo.svg" alt="Logo" />
           <ul>
             <li>
-              <div class="sidebar-li-container padding-t15-px">
+              <a href="#home" class="sidebar-li-container padding-t15-px">
                 <img class="sidebar-i" src="./img/home.svg" alt="" />
                 <span class="display-in-block padding-l10-px">Home</span>
-              </div>
+              </a>
             </li>
             <li>
-              <div class="sidebar-li-container padding-t15-px">
+              <a href="#search" class="sidebar-li-container padding-t15-px">
                 <img class="sidebar-i" src="./img/search.svg" alt="" />
                 <span class="display-in-block padding-l10-px">Cerca</span>
-              </div>
+              </a>
             </li>
             <li>
-              <div class="sidebar-li-container padding-t15-px">
+              <a href="#library" class="sidebar-li-container padding-t15-px">
                 <img class="sidebar-i" src="./img/libreria.svg" alt="" />
-                <span class="display-in-block padding-l10-px">La tua</span>
-                libreria
-              </div>
+                <span class="display-in-block padding-l10-px"
+                  >La tua libreria</span
+                >
+              </a>
             </li>
           </ul>
-          <h4 class="white padding-t30-px">PLAYLIST</h4>
-          <ul>
-            <li class="padding-t20-px d-flex align-center">
-              <i
-                class="fa-solid fa-square-plus f-size-50-px padding-r10-px"
-              ></i>
-              Crea Playlist
-            </li>
-            <li class="padding-t20-px">Nome Playlist</li>
-            <li class="padding-t20-px">Nome Playlist</li>
-            <li class="padding-t20-px">Nome Playlist</li>
-            <li class="padding-t20-px">Nome Playlist</li>
-            <li class="padding-t20-px">Nome Playlist</li>
-            <li class="padding-t20-px">Nome Playlist</li>
-            <li class="padding-t20-px">Nome Playlist</li>
-          </ul>
+          <div class="sidebar-content-playlist">
+            <h4 class="white padding-t30-px">PLAYLIST</h4>
+            <ul>
+              <li class="padding-t20-px d-flex align-center">
+                <a class="sidebar-li-container-middle" href="#createplaylist"
+                  ><i
+                    class="fa-solid fa-square-plus f-size-50-px padding-r10-px"
+                  ></i>
+                  Crea Playlist</a
+                >
+              </li>
+              <li class="padding-t20-px">
+                <a class="sidebar-li-container-middle" href="#newplaylist"
+                  >Nome Playlist</a
+                >
+              </li>
+              <li class="padding-t20-px">
+                <a class="sidebar-li-container-middle" href="#newplaylist"
+                  >Nome Playlist</a
+                >
+              </li>
+              <li class="padding-t20-px">
+                <a class="sidebar-li-container-middle" href="#newplaylist"
+                  >Nome Playlist</a
+                >
+              </li>
+              <li class="padding-t20-px">
+                <a class="sidebar-li-container-middle" href="#newplaylist"
+                  >Nome Playlist</a
+                >
+              </li>
+              <li class="padding-t20-px">
+                <a class="sidebar-li-container-middle" href="#newplaylist"
+                  >Nome Playlist</a
+                >
+              </li>
+              <li class="padding-t20-px">
+                <a class="sidebar-li-container-middle" href="#newplaylist"
+                  >Nome Playlist</a
+                >
+              </li>
+              <li class="padding-t20-px">
+                <a class="sidebar-li-container-middle" href="#newplaylist"
+                  >Nome Playlist</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="sidebar-content">
+        <div class="sidebar-content-end">
           <div class="download">
             <ul>
               <li>
-                <img class="download-icon" src="./img/download.svg" alt="" />
-                Installa app
+                <a class="sidebar-li-container" href="#installapp"
+                  ><img class="download-icon" src="./img/download.svg" alt="" />
+                  <span class="display-in-block padding-l10-px"
+                    >Installa app</span
+                  ></a
+                >
               </li>
             </ul>
           </div>
@@ -78,7 +115,38 @@
         </div>
       </div>
       <div class="main-content">
-        <h1 class="white">Ciao</h1>
+        <div class="upper-bar">
+          <div class="main-nav-bar">
+            <ul class="main-nav-list">
+              <li class="padding-r30-px padding-t30-px">
+                <a class="sidebar-li-container" href="#in-evidance"
+                  >IN EVIDENZA</a
+                >
+              </li>
+              <li class="padding-r30-px padding-t30-px">
+                <a class="sidebar-li-container" href="#podcast">PODCAST</a>
+              </li>
+              <li class="padding-r30-px padding-t30-px">
+                <a class="sidebar-li-container" href="#leaderboard"
+                  >CLASSIFICHE</a
+                >
+              </li>
+              <li class="padding-r30-px padding-t30-px">
+                <a class="sidebar-li-container" href="#genres-and-moods"
+                  >GENERI E MOOD</a
+                >
+              </li>
+              <li class="padding-r30-px padding-t30-px">
+                <a class="sidebar-li-container" href="#new-releases"
+                  >NUOVE USCITE</a
+                >
+              </li>
+              <li class="padding-t30-px">
+                <a class="sidebar-li-container" href="#discover">SCOPRI</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
     <div class="bottom-section">
@@ -105,13 +173,14 @@
           </div>
         </div>
         <div class="bottom-col">
-          <div class="content">
+          <div class="control-bar">
             <i class="fa-solid fa-shuffle"></i>
             <i class="fa-solid fa-backward-step"></i>
             <i class="fa-regular fa-circle-play"></i>
             <i class="fa-solid fa-forward-step"></i>
             <i class="fa-solid fa-rotate-right"></i>
           </div>
+          <div class="time-bar"></div>
         </div>
         <div class="bottom-col">
           <div class="content"></div>

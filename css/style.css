@@ -53,6 +53,8 @@ header {
 
 .bottom-col {
   color: white;
+  display: flex;
+  align-items: center;
 }
 
 .bottom-col img {
@@ -63,6 +65,7 @@ header {
   display: flex;
   padding: 25px 10px;
   align-items: center;
+  justify-content: space-between;
 }
 
 .bottom-col .content span {
@@ -76,6 +79,7 @@ ul {
 
 .sidebar-i {
   width: 35px;
+  filter: brightness(0.5);
 }
 
 .header-b {
@@ -87,6 +91,11 @@ ul {
   float: inline-end;
   margin-top: 27px;
   margin-right: 5px;
+  cursor: pointer;
+}
+
+.header-b:hover {
+  padding: 16px 45px;
 }
 
 .nav-hr {
@@ -111,8 +120,51 @@ ul {
 .sidebar-li-container {
   display: flex;
   align-items: center;
+  text-decoration: none;
+  color: rgba(128, 128, 128, 255);
 }
 
+.sidebar-li-container-middle {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: rgba(128, 128, 128, 255);
+}
+
+.sidebar,
+.main-nav-list,
+a:hover {
+  color: white;
+}
+
+.sidebar-content-start li:nth-child(1) .sidebar-li-container::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 35px;
+  background-color: #a2ef2c;
+  position: absolute;
+  top: 92px;
+  left: 0px;
+}
+
+.main-nav-list li:nth-child(1) .sidebar-li-container::before {
+  content: "";
+  display: block;
+  width: 35px;
+  height: 3px;
+  background-color: #a2ef2c;
+  position: relative;
+  top: 13px;
+  left: 70px;
+}
+
+.main-nav-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 /********** UTILITY CLASSES **********/
 
 .padding-l15-px {
@@ -145,6 +197,10 @@ ul {
 
 .padding-t15-px {
   padding-top: 15px;
+}
+
+.padding-r30-px {
+  padding-right: 30px;
 }
 
 .display-in-block {
