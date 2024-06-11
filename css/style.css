@@ -39,6 +39,7 @@ body {
   background-color: rgba(20, 25, 34, 255);
   position: relative;
   top: 100px;
+  overflow: auto;
 }
 
 header {
@@ -166,9 +167,15 @@ a:hover {
   justify-content: center;
 }
 
-.recently-played {
+.recently-played,
+.For-John-Doe,
+.Popular-Artists {
   margin-top: 60px;
   padding-left: 30px;
+}
+
+.For-John-Doe h2 {
+  margin-bottom: 10px;
 }
 
 .cards-container {
@@ -189,7 +196,9 @@ a:hover {
   padding: 10px 0px;
 }
 
-.card-text p {
+.card-text,
+.cards-title,
+p {
   font-size: small;
   color: rgba(128, 128, 128, 255);
 }
