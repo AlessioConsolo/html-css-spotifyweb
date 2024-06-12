@@ -239,6 +239,25 @@ p {
 .bottom-col-middle {
   flex-direction: column;
   flex-grow: 2;
+  margin: 0px 45px;
+}
+
+.time-bar::before {
+  content: "0:25";
+  display: block;
+  font-size: 13px;
+  position: absolute;
+  top: -5px;
+  left: -45px;
+}
+
+.time-bar::after {
+  content: "4:35";
+  display: block;
+  font-size: 13px;
+  position: absolute;
+  top: -5px;
+  right: -45px;
 }
 
 .volume-bar-controls {
@@ -250,6 +269,7 @@ p {
 .time-bar {
   width: 100%;
   margin-top: 15px;
+  position: relative;
 }
 
 .time-bar-primary {
