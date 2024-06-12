@@ -20,7 +20,13 @@
       </header>
       <div class="sidebar">
         <div class="sidebar-content-start">
-          <img class="padding-b15-px" src="./img/logo.svg" alt="Logo" />
+          <img
+            id="logo"
+            class="padding-b15-px"
+            src="./img/logo.svg"
+            alt="Logo"
+          />
+          <img id="small-logo" src="./img/logo-small.svg" alt="Small-Logo" />
           <ul>
             <li>
               <a href="#home" class="sidebar-li-container padding-t15-px">
@@ -45,51 +51,53 @@
           </ul>
           <div class="sidebar-content-playlist">
             <h4 class="white padding-t30-px">PLAYLIST</h4>
-            <ul>
-              <li class="padding-t20-px d-flex align-center">
-                <a class="sidebar-li-container-middle" href="#createplaylist"
-                  ><i
-                    class="fa-solid fa-square-plus f-size-50-px padding-r10-px"
-                  ></i>
-                  Crea Playlist</a
-                >
-              </li>
-              <li class="padding-t20-px">
-                <a class="sidebar-li-container-middle" href="#newplaylist"
-                  >Nome Playlist</a
-                >
-              </li>
-              <li class="padding-t20-px">
-                <a class="sidebar-li-container-middle" href="#newplaylist"
-                  >Nome Playlist</a
-                >
-              </li>
-              <li class="padding-t20-px">
-                <a class="sidebar-li-container-middle" href="#newplaylist"
-                  >Nome Playlist</a
-                >
-              </li>
-              <li class="padding-t20-px">
-                <a class="sidebar-li-container-middle" href="#newplaylist"
-                  >Nome Playlist</a
-                >
-              </li>
-              <li class="padding-t20-px">
-                <a class="sidebar-li-container-middle" href="#newplaylist"
-                  >Nome Playlist</a
-                >
-              </li>
-              <li class="padding-t20-px">
-                <a class="sidebar-li-container-middle" href="#newplaylist"
-                  >Nome Playlist</a
-                >
-              </li>
-              <li class="padding-t20-px">
-                <a class="sidebar-li-container-middle" href="#newplaylist"
-                  >Nome Playlist</a
-                >
-              </li>
-            </ul>
+            <div class="padding-t20-px d-flex align-center">
+              <a class="sidebar-li-container-middle" href="#createplaylist"
+                ><i
+                  class="fa-solid fa-square-plus f-size-50-px padding-r10-px"
+                ></i>
+                Crea Playlist</a
+              >
+            </div>
+            <div class="sidebar-content-playlist-names">
+              <ul>
+                <li class="padding-t20-px">
+                  <a class="sidebar-li-container-middle" href="#newplaylist"
+                    >Nome Playlist</a
+                  >
+                </li>
+                <li class="padding-t20-px">
+                  <a class="sidebar-li-container-middle" href="#newplaylist"
+                    >Nome Playlist</a
+                  >
+                </li>
+                <li class="padding-t20-px">
+                  <a class="sidebar-li-container-middle" href="#newplaylist"
+                    >Nome Playlist</a
+                  >
+                </li>
+                <li class="padding-t20-px">
+                  <a class="sidebar-li-container-middle" href="#newplaylist"
+                    >Nome Playlist</a
+                  >
+                </li>
+                <li class="padding-t20-px">
+                  <a class="sidebar-li-container-middle" href="#newplaylist"
+                    >Nome Playlist</a
+                  >
+                </li>
+                <li class="padding-t20-px">
+                  <a class="sidebar-li-container-middle" href="#newplaylist"
+                    >Nome Playlist</a
+                  >
+                </li>
+                <li class="padding-t20-px">
+                  <a class="sidebar-li-container-middle" href="#newplaylist"
+                    >Nome Playlist</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="sidebar-content-end">
@@ -154,6 +162,9 @@
           <div class="cards-container">
             <div class="song-cards">
               <img src="./img/metal_lifting.jpg" alt="" />
+              <p class="hide">
+                <i class="fa-regular fa-circle-play f-size-70-px"></i>
+              </p>
               <div class="card-text">
                 <h3>Heavy Metal</h3>
                 <p>Subtitle</p>
@@ -161,6 +172,9 @@
             </div>
             <div class="song-cards">
               <img src="./img/stranger.jpeg" alt="" />
+              <p class="hide">
+                <i class="fa-regular fa-circle-play f-size-70-px"></i>
+              </p>
               <div class="card-text">
                 <h3>
                   Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)
@@ -170,6 +184,9 @@
             </div>
             <div class="song-cards">
               <img src="./img/aquietplace.jpeg" alt="" />
+              <p class="hide">
+                <i class="fa-regular fa-circle-play f-size-70-px"></i>
+              </p>
               <div class="card-text">
                 <h3>A quiet place</h3>
                 <p>Subtitle</p>
@@ -177,6 +194,9 @@
             </div>
             <div class="song-cards">
               <img src="./img/split.jpeg" alt="" />
+              <p class="hide">
+                <i class="fa-regular fa-circle-play f-size-70-px"></i>
+              </p>
               <div class="card-text">
                 <h3>Split</h3>
                 <p>Subtitle</p>
@@ -184,6 +204,9 @@
             </div>
             <div class="song-cards">
               <img src="./img/cure.jpeg" alt="" />
+              <p class="hide">
+                <i class="fa-regular fa-circle-play f-size-70-px"></i>
+              </p>
               <div class="card-text">
                 <h3>A cure for wellness</h3>
                 <p>Subtitle</p>
@@ -191,6 +214,9 @@
             </div>
             <div class="song-cards">
               <img src="./img/sinister.jpeg" alt="" />
+              <p class="hide">
+                <i class="fa-regular fa-circle-play f-size-70-px"></i>
+              </p>
               <div class="card-text">
                 <h3>Sinister</h3>
                 <p>Subtitle</p>
@@ -206,12 +232,18 @@
           <div class="cards-container">
             <div class="song-cards">
               <img src="./img/radar.jpeg" alt="" />
+              <p class="hide-middle">
+                <i class="fa-regular fa-circle-play f-size-70-px"></i>
+              </p>
               <div class="card-text">
                 <h3>Release Radar</h3>
               </div>
             </div>
             <div class="song-cards">
               <img src="./img/mixdaily.jpeg" alt="" />
+              <p class="hide-middle">
+                <i class="fa-regular fa-circle-play f-size-70-px"></i>
+              </p>
               <div class="card-text">
                 <h3>Daily Mix 1</h3>
               </div>
@@ -226,12 +258,18 @@
           <div class="cards-container">
             <div class="song-cards">
               <img src="./img/youg.jpeg" alt="" />
+              <p class="hide-bottom">
+                <i class="fa-regular fa-circle-play f-size-70-px"></i>
+              </p>
               <div class="card-text">
                 <h3>Lana del Rey</h3>
               </div>
             </div>
             <div class="song-cards">
               <img src="./img/einaudi.jpeg" alt="" />
+              <p class="hide-bottom">
+                <i class="fa-regular fa-circle-play f-size-70-px"></i>
+              </p>
               <div class="card-text">
                 <h3>Ludovico Einaudi</h3>
               </div>
@@ -247,8 +285,8 @@
             <img src="./img/sinister.jpeg" alt="Sinister" />
           </div>
           <div class="text-container">
-            <p class="display-in-block padding-l15-px">
-              <strong>Sinister</strong><br />
+            <p class="display-in-block padding-l15-px padding-r35-px">
+              <strong class="white">Sinister</strong><br />
               <span>Brano Nome</span>
             </p>
           </div>
@@ -263,18 +301,37 @@
             ></i>
           </div>
         </div>
-        <div class="bottom-col">
+        <div class="bottom-col-middle">
           <div class="control-bar">
-            <i class="fa-solid fa-shuffle"></i>
-            <i class="fa-solid fa-backward-step"></i>
-            <i class="fa-regular fa-circle-play"></i>
-            <i class="fa-solid fa-forward-step"></i>
-            <i class="fa-solid fa-rotate-right"></i>
+            <i class="fa-solid fa-shuffle f-size-20-px padding-r20-px"></i>
+            <i
+              class="fa-solid fa-backward-step f-size-20-px padding-r20-px"
+            ></i>
+            <i
+              class="fa-regular fa-circle-play f-size-30-px padding-r40-px padding-l20-px"
+            ></i>
+            <i class="fa-solid fa-forward-step f-size-20-px padding-r20-px"></i>
+            <i class="fa-solid fa-rotate-right f-size-20-px"></i>
           </div>
-          <div class="time-bar"></div>
+          <div class="time-bar">
+            <div class="time-bar-primary">
+              <span class="time-bar-progress"></span>
+            </div>
+          </div>
         </div>
         <div class="bottom-col">
-          <div class="content"></div>
+          <div class="volume-bar-controls">
+            <i class="fa-solid fa-list-ul"></i>
+            <i class="fa-solid fa-display padding-l15-px"></i>
+            <i
+              class="fa-solid fa-volume-high padding-l15-px padding-r15-px"
+            ></i>
+          </div>
+          <div class="volume-bar">
+            <div class="volume-bar-primary">
+              <span class="volume-bar-progress"></span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
